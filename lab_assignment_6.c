@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Sean Heisey
+// COP3502
+// Lab 6
+// 2/22/23
+
 int search(int numbers[], int low, int high, int value) 
 {
 	// updates mid
