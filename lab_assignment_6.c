@@ -3,14 +3,21 @@
 
 int search(int numbers[], int low, int high, int value) 
 {
+	// updates mid
 	int mid = (low + high) / 2;
+	// checks if the number not in array
 	if(low>high)
 		return -1;
+	// checks if number is found
 	if(numbers[mid]==value)
 		return mid;
+	// checks left half of list
 	else if(numbers[mid]>value)
+		// updates high
 		search(numbers, low, mid-1, value);
+	// checks right half of list
 	else
+		// updates low
 		search(numbers, mid+1, high, value);
 }
 
